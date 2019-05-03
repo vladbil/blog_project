@@ -1,0 +1,13 @@
+h1{
+  display: block;
+  margin-top: 5%;
+     margin-left: 28%;
+}
+nav{
+  margin-top: -4%;
+  position: fixed;
+}
+.post{
+  width: 40%;
+  margin-left: 25%;
+}

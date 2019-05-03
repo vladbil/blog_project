@@ -1,0 +1,292 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+span {
+  font-family: 'Fascinate Inline', cursive;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  width: 80%;
+}
+.elfsight-app-7232d532-980b-42e3-bf30-93603d7a911e{
+  z-index: -1;
+}
+.item {
+  display: inline-block;
+  width: 380px;
+  padding-top: 10px;
+  margin-left: 10%;
+  margin-top: 4%;
+
+}
+
+/* .item img{
+  width: 400px;
+  height: 300px;
+
+} */
+.img {
+  display: inline-block;
+  width: 400px;
+  height: 320px;
+  overflow: hidden;
+}
+
+.img img {
+  width: 400px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item:hover {
+  opacity: 0.5;
+}
+
+.item h1 {
+  font-size: 20px;
+  width: 99%;
+}
+
+.item p {
+  height: 150px;
+  font-size: 16px;
+  width: 95%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+#menu {
+  margin-top: -10px;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  height: 6%;
+  margin-top: -0.5%;
+  position: fixed;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline;
+  margin-left: 40px;
+}
+
+nav ul {
+  padding-top: 20px;
+}
+
+/* nav li:first-child{
+float: left;
+} */
+input[type=checkbox] {
+  display: none;
+}
+
+.show-menu {
+  display: none;
+}
+
+aside {
+  width: 320px;
+  float: right;
+  /* padding-top: 10px; */
+  padding-right: 8%;
+  margin-top: 4%;
+}
+
+aside img {
+  border-radius: 120px;
+  width: 300px;
+}
+
+aside p {
+  text-align: center;
+}
+
+.border {
+  border: 2px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+aside hr {
+  display: none;
+}
+
+footer {
+  width: 99%;
+  height: 10%;
+  background-color: #d8d1d8;
+  text-align: center;
+  padding: 10px;
+}
+
+.elfsight-app-7232d532-980b-42e3-bf30-93603d7a911e {
+  margin-left: 28px !important;
+}
+
+.pages {
+  width: 100%;
+}
+
+.pages ul {
+  text-align: center;
+}
+
+.pages li {
+  list-style-type: none;
+  display: inline;
+}
+
+.maps {
+  margin-top: 10%;
+  margin-left: 45%;
+  width: 400px;
+}
+
+@media (min-width: 551px) and (max-width: 900px) {
+  nav {
+    text-align: right;
+    padding-right: 10%;
+  }
+
+  nav li:first-child {
+    margin-right: 50%;
+  }
+
+  aside {
+    width: 280px;
+    float: right;
+    padding-top: 10px;
+    padding-right: 8%;
+  }
+
+  aside img {
+    border-radius: 120px;
+    width: 250px;
+  }
+
+  aside p {
+    text-align: center;
+  }
+
+  .border {
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 15px;
+  }
+
+  #menu {
+
+    margin-top: -10px;
+    text-align: center;
+  }
+
+  nav {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    height: 5%;
+  }
+
+  nav li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 20px;
+  }
+
+  nav ul {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  /*Make dropdown links appear inline*/
+  nav ul {
+    position: static;
+    display: none;
+  }
+
+  /*Create vertical spacing*/
+  nav li {
+    margin-bottom: 1px;
+  }
+
+  /*Make all menu links full width*/
+  ul li {
+    width: 100%;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+  }
+
+  .show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+    background: white;
+    text-align: center;
+    padding-top: 20px;
+    height: 20px;
+    position: fixed;
+    width: 100%;
+  }
+
+  /*Display 'show menu' link*/
+  .show-menu {
+    display: block;
+  }
+
+  /*Hide checkbox*/
+  input[type=checkbox] {
+    display: none;
+  }
+  /*Show menu when invisible checkbox is checked*/
+  input[type=checkbox]:checked~#menu {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .item {
+    display: block;
+    margin-left: 1%;
+    padding-top: 13%;
+
+    /* width: 70%; */
+  }
+  .item p {
+    width: 100%;
+    margin-left: 1%;
+    height: 100px;
+  }
+.border{
+  margin-left: -5%;
+
+}
+aside {
+  display: none;
+}
+
+
+}
