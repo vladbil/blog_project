@@ -3,6 +3,35 @@ body {
   padding: 0;
 }
 
+.sliderI{
+  /* margin-right: 15px; */
+  display: none;
+  /* text-align: left;
+  position:relative; */
+
+}
+input[id^="slider-point-"] {
+    display: inline;
+  }
+
+#slider-point-1:checked ~.mainCarousel .sliderI:nth-child(-n+4){
+  display: inline-block;
+}
+
+#slider-point-2:checked ~.mainCarousel .sliderI:nth-child(-n+5){
+  display: inline-block;
+}
+#slider-point-2:checked ~.mainCarousel .sliderI:first-child{
+  display: none;
+}
+
+#slider-point-3:checked ~.mainCarousel .sliderI:nth-child(n+3){
+  display: inline-block;
+}
+#slider-point-3:checked ~.mainCarousel .sliderI:nth-last-child(-n+2){
+  display: none;
+}
+
 header {
   background-image: url(images/macbook.jpg);
   background-size: cover;
@@ -35,15 +64,8 @@ nav a {
   display: none;
 }
 .slider {
-  /* width: 100%; */
-  /* height: 450px; */
-  /* position: absolute;
-top: 25%;
-left: 45%;
-margin-right: -50%;
-transform: translate(-45%, -75%); */
-  padding-left: 20%;
-  padding-top: 80px;
+  width: 900px;
+  padding-top: 60px;
   padding-bottom: 10px;
   /* opacity: 0.5 */
 }
@@ -52,22 +74,25 @@ transform: translate(-45%, -75%); */
   width: 900px;
   text-align: center;
   color: #e8ffff;
-  padding-top: 11px;
-  padding-bottom: 20px;
+
+  /* padding-top: 8px; */
+  /* padding-bottom: 10px; */
 }
 
 .description p {
-  font-size: 26px;
-  padding-top: 20px;
+  font-size: 24px;
+  padding-top: 10px;
   padding-bottom: 20px;
+  margin-left: -20px;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
 .slider img {
-  width: 920px;
-  max-height: 450px;
-
+  width: 440px;
+  height: 230px;
+  /* padding-left: 100px; */
 }
+
 
 main {
   background-color: #ebebeb;
@@ -208,6 +233,11 @@ margin-top: -4px;
 #contactForm img{
 width: 20px;
 }
+.form-control{
+width: 350px;
+height: 30px;
+}
+
 
 /* MEDIA */
 
@@ -232,11 +262,11 @@ width: 20px;
 
 @media(min-width: 1025px) and (max-width: 1479px){
 .slider{
-  padding-left: 18%;
+  padding-left: 10%;
 }
 .slider img {
-  width: 720px;
-  height: 350px;
+  width: 400px;
+  height: 250px;
 }
 .items{
 width: 75%;
@@ -269,8 +299,8 @@ padding-right: 10px;
   padding-left: 18%;
 }
 .slider img {
-width: 720px;
-height: 350px;
+width: 380px;
+height: 250px;
 }
 .description {
     width: 720px;
@@ -357,7 +387,7 @@ h2{
 }
 
 .items img {
-  width: 420px;
+  width: 380px;
   height: 270px;
 }
 #firstItem, #secondItem, #thirdItem, #fourthItem, #fifthItem, #sixthItem {
@@ -488,6 +518,13 @@ background-color: #ebebeb;
 
 #contactForm{
   padding-bottom: 4px;
+}
+.slider{
+  width: 94%;
+}
+.slider img{
+  width: 200px;
+  height: 150px;
 }
 
 
