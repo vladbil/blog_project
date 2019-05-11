@@ -10,8 +10,10 @@
 <body>
   <header>
     <nav>
-      <ul>
-        <li><a href="index.html">BLOG</a></li>
+      <label for="show-menu" class="show-menu">Show Menu</label>
+      <input type="checkbox" id="show-menu" role="button"  checked>
+      <ul id="menu">
+      <li><a href="index.html">BLOG</a></li>
         <li><a href="#items">Публікації</a></li>
         <li><a href="#">Фото</a></li>
         <li><a href="#">Шось</a></li>
@@ -24,6 +26,32 @@
       <div class="maps">
       <a class="dg-widget-link" href="http://2gis.ua/kiev/profiles/70000001029949787,70000001021551026/center/30.550025999999978,50.44152563005971/zoom/12?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Києва</a><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":350,"height":200,"borderColor":"#a3a3a3","pos":{"lat":50.44152563005971,"lon":30.550025999999978,"zoom":12},"opt":{"city":"kiev"},"org":[{"id":"70000001029949787"},{"id":"70000001021551026"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
       </div>
+
+      <div class="separator">
+    <svg class="separator__svg" width="100%" height="200" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#44A36F" >
+       <path d="M 100 100 V 10 L 0 100"/>
+      </svg>
+  </div>
+
+  <form id="contactForm">
+  						 	<div class="form-group">
+  						 		<label><img src="images/icons/name.png" alt=""> Name<br></label>
+  						 		<input type="text" name="name" class="form-control" placeholder="Enter Name">
+  						 	</div>
+  						 	<div class="form-group">
+  						 		<label><img src="images/icons/mail.png" alt=""> Email<br></label>
+  						 		<input type="email" name="email" class="form-control" placeholder="Enter Email">
+  						 	</div>
+  						 	<div class="form-group">
+  						 		<label><img src="images/icons/text.svg" alt=""> Message <br></label>
+  						 		<textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea>
+  						 	</div>
+
+
+  						 	<div class="form-group">
+  						 		<button class="">Post →</button>
+  						 	</div>
+  						</form>
   </main>
 
   <footer>
