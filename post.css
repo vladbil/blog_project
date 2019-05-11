@@ -1,0 +1,20 @@
+#forPost{
+  width: 100%;
+  text-align: center;
+}
+.post{
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.postDescription{
+  width: 80%;
+  margin-left: 10%;
+  padding-bottom: 20px;
+  text-align: justify;
+}
+.fb-share-button{
+  padding-bottom: 20px;
+
+}
