@@ -16,5 +16,25 @@
 }
 .fb-share-button{
   padding-bottom: 20px;
+}
+.post img{
+  width: 720px;
+  height: 480px;
+}
+@media (max-width: 900px) and (min-width:750px) {
+  .post img{
+    width: 600px;
+    height: 430px;
+  }
+}
+@media (max-width: 750px) {
+  .post img{
+    width: 400px;
+    height: 250px;
+  }
+  .post{
+    margin-left: 10%;
 
+  width: 89%;
+}
 }
